@@ -16,6 +16,7 @@
   },
   "scripts": {
     "start": "nodemon",
+    "build-service": "npx rimraf ./build && npx tsc",
     "build": "npx rimraf ./build && npx tsc && cd src-client && npm run build",
     "promote": "npm version prerelease && npm run build && npm publish",
     "update-models": "npx rimraf node_modules/@wisegar-org/wgo-base-models && npm install @wisegar-org/wgo-base-models@latest -E",

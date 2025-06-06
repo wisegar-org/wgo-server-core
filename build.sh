@@ -2,7 +2,7 @@
 npx rimraf node_modules
 npm install
 rm -r build
-npm run build
+npm run build-service
 cp -r ./assets ./build/assets 2>/dev/null || :
 cp -r ./views ./build/views 2>/dev/null || :
 cp -r ./modules/core/views ./build/modules/core/views 2>/dev/null || :
