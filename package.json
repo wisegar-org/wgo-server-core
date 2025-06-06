@@ -3,6 +3,9 @@
   "version": "0.0.12",
   "description": "",
   "main": "build/index.js",
+  "bin": {
+    "wgocli": "./build/run.js"
+  },
   "files": [
     "build"
   ],
