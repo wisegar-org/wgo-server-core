@@ -25,6 +25,8 @@ import { IServerOptions } from "./interfaces/server-options.interface";
 import { UseRestMiddleware } from "./middlewares/rest.middleware";
 import { ExpirationFreqEnum } from "./core/services/JwtAuthService";
 import { boot } from "./handlers/boot.handler";
+import { AppController } from "./wgo/controllers/AppController";
+import { OvhController } from "./ovh/controllers/ovh.controller";
 
 const port = GetPortKey();
 
@@ -32,7 +34,7 @@ const serverOptions: IServerOptions = {
   authenticator: AuthenticationHandler,
   context: AppContextHandler,
   formatError: errorHandler,
-  controllers: getControllers(),
+  controllers: [AppController, OvhController],
   port: parseInt(port),
   maxFileSize: 5000000000,
   maxFiles: 10,
