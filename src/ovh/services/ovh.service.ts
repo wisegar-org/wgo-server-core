@@ -1,11 +1,24 @@
+import { IsStringEmptyNullOrUndefined } from "wgo-extensions";
+
+//TODO: Ovh Api for nodejs
 export class OvhService {
   private ovh: any;
-  private appKey: string = "49efe3b885fb556a";
-  private appSecret: string = "3a7c0846b0747a197ec223bc2f7d72bd";
-  private consumerKey: string = "b77add1af57497dca3436ec94d7e75a5";
+  private appKey: string;
+  private appSecret: string;
+  private consumerKey: string;
 
   constructor() {
-    // Initialize the OVH service here if needed
+    this.appKey = process.env.OVH_APP_KEY || "";
+    this.appSecret = process.env.OVH_APP_SECRET || "";
+    this.consumerKey = process.env.OVH_CONSUMER_KEY || "";
+
+    if (
+      IsStringEmptyNullOrUndefined(this.appKey) ||
+      IsStringEmptyNullOrUndefined(this.appSecret) ||
+      IsStringEmptyNullOrUndefined(this.consumerKey)
+    ) {
+      throw new Error("OVH credentials are not set in environment variables.");
+    }
   }
 
   private initializeOvh() {
