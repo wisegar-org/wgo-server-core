@@ -10,5 +10,5 @@ export const UseSwaggerMiddleware = (options: IServerOptions) => {
   if (IsNullOrUndefined(options)) throw new Error("Invalid options parameter");
   if (IsNullOrUndefined(options.app))
     throw new Error("Invalid options app parameter");
-  options.app.use("/api-docs", swagger.serve, swagger.setup(swaggerDocument));
+  options.app.use("/api/docs", swagger.serve, swagger.setup(swaggerDocument));
 };
