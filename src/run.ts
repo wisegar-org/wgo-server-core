@@ -27,6 +27,7 @@ import { ExpirationFreqEnum } from "./core/services/JwtAuthService";
 import { boot } from "./handlers/boot.handler";
 import { AppController } from "./wgo/controllers/AppController";
 import { OvhController } from "./ovh/controllers/ovh.controller";
+import { UseSwaggerMiddleware } from "./middlewares/swagger.middleware";
 
 const port = GetPortKey();
 
@@ -45,6 +46,7 @@ const serverOptions: IServerOptions = {
     UsePublicMediaHostMiddleware(app);
     UseAssetsHBHostMiddleware(app);
     UseRestMiddleware(serverOptions);
+    UseSwaggerMiddleware(serverOptions);
   },
   resolvers: getResolvers(),
   privateKey: GetPrivateKey(),
