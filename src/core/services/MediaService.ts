@@ -2,7 +2,7 @@ import { UploadedFile } from "express-fileupload";
 import { Connection, Repository } from "typeorm";
 import { writeFileSync, existsSync, mkdirSync } from "fs-extra";
 import { join, normalize, extname } from "path";
-import { MediaEntityTypeEnum } from "../models/enums/MediaEntityTypeEnum";
+import { MediaEntityTypeEnum } from "../../models/enums/media-entitytype.enum";
 import MediaEntity from "../../database/entities/MediaEntity";
 
 export class MediaService {
