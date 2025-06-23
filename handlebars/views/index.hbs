@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlebars Example</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Handlebars Example</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Items List</h2>
+            <ul>
+                {{#each items}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </section>
+        <section>
+            <h2>Message</h2>
+            <p>{{message}}</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Handlebars Example</p>
+    </footer>
+</html>
