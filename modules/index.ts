@@ -31,15 +31,14 @@ export * from "./middlewares/rest.middleware";
 /**
  * Models
  */
-export * from "./models/Content";
-export * from "./models/Events";
-export * from "./models/Item";
+export * from "./core/models/content.model";
+export * from "./core/models/events.model";
+export * from "./core/models/item.model";
 // export * from "./models/Newsletter";
-export * from "./models/Poll";
-export * from "./models/Templates";
-export * from "./models/WRouteRecordRaw";
-export * from "./models/models";
-export * from "./models/translations/content";
+export * from "./core/models/poll.model";
+export * from "./core/models/templates.model";
+export * from "./core/models/wroute-record-raw.model";
+export * from "./core/models/translations/content";
 // export * from "./models/translations/events";
 // export * from "./models/translations/inscriptions";
 // export * from "./models/translations/newsletter";

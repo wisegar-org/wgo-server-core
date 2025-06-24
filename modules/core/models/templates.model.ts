@@ -2,7 +2,7 @@ import {
   AuthTemplateEnum,
   getAuthTemplateKey,
 } from "@wisegar-org/wgo-base-models/build/authentication";
-import { AGVNewsletterInscriptionStatusEnum } from "./Newsletter";
+import { AGVNewsletterInscriptionStatusEnum } from "./newsletter.model";
 
 export const AGVTemplateKey = "AGV_TEMPLATE_DATA_";
 
