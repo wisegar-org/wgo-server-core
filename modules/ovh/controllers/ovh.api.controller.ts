@@ -1,10 +1,13 @@
 import { Request, Response } from "express";
-import { Controller } from "../../decorators/controller.decorator";
+import {
+  ApiController,
+  Controller,
+} from "../../decorators/controller.decorator";
 import { Get } from "../../decorators/get.decorator";
-import { OvhService } from "../services/ovh.service";
 import { validateOvhAuthHeader } from "../../services/ovh-auth.service";
+import { OvhService } from "../services/ovh.service";
 
-@Controller("/api/ovh")
+@ApiController("ovh")
 export class OvhController {
   @Get("/me")
   public async GetOvhMe(req: Request, res: Response) {

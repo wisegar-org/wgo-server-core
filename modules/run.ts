@@ -8,8 +8,6 @@ import {
 import { AuthenticationHandler } from "./wgo/handlers/AuthenticationHandler";
 import { AppContextHandler, ctx } from "./wgo/handlers/AppContextHandler";
 import { errorHandler } from "./wgo/handlers/ErrorHandler";
-import { getControllers } from "./wgo/controllers";
-
 import { createDatabase, dropDatabase } from "typeorm-extension";
 import { getResolvers } from "./wgo/resolvers";
 import { UseHandlebarsRenderMiddleware } from "./agv/middlewares/HandlebarsRenderMiddleware";
@@ -26,8 +24,9 @@ import { UseRestMiddleware } from "./middlewares/rest.middleware";
 import { ExpirationFreqEnum } from "./core/services/JwtAuthService";
 import { boot } from "./handlers/boot.handler";
 import { AppController } from "./wgo/controllers/AppController";
-import { OvhController } from "./ovh/controllers/ovh.controller";
 import { UseSwaggerMiddleware } from "./middlewares/swagger.middleware";
+import { OvhController } from "./ovh/controllers/ovh.api.controller";
+import { IndexOvhController } from "./ovh/controllers/index.controller";
 
 const port = GetPortKey();
 
@@ -35,7 +34,7 @@ const serverOptions: IServerOptions = {
   authenticator: AuthenticationHandler,
   context: AppContextHandler,
   formatError: errorHandler,
-  controllers: [AppController, OvhController],
+  controllers: [AppController, OvhController, IndexOvhController],
   port: parseInt(port),
   maxFileSize: 5000000000,
   maxFiles: 10,
