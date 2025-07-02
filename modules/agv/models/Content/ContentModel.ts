@@ -1,5 +1,5 @@
-import StorageEntity from "../../../database/entities/StorageEntity";
-import { StorageService } from "../../../services/storage.service";
+import StorageEntity from "../../../core/database/entities/StorageEntity";
+import { StorageService } from "../../../core/services/storage.service";
 import { AGVContentsInput } from "../../resolvers/Content/AGVContentsInputs";
 import { StorageItem, IContextBase } from "@wisegar-org/wgo-base-models";
 

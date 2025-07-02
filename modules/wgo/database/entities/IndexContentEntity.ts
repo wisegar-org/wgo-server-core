@@ -6,7 +6,7 @@ import {
   BaseEntity,
 } from "typeorm";
 import "reflect-metadata";
-import MediaEntity from "../../../database/entities/MediaEntity";
+import MediaEntity from "../../../core/database/entities/MediaEntity";
 
 @Entity()
 export class IndexContentEntity extends BaseEntity {

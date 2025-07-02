@@ -2,8 +2,8 @@ import { DataSource } from "typeorm";
 import { GetConfig } from "wgo-settings";
 import { SETTINGS_POP3, SETTINGS_SMTP } from "@wisegar-org/wgo-base-models";
 import { ctx } from "../../handlers/AppContextHandler";
-import { settingsDataSeeder } from "../../../database/seeders/settings.seeder";
-import { getSmtpSettings } from "../../../utils/settings.utils";
+import { settingsDataSeeder } from "../../../core/database/seeders/settings.seeder";
+import { getSmtpSettings } from "../../../core/utils/settings.utils";
 
 export const settingsSeeder = async (dataSource: DataSource) => {
   //Save keys to database settings
@@ -21,4 +21,3 @@ export const settingsSeeder = async (dataSource: DataSource) => {
 function getPop3Settings(arg0: any): any {
   throw new Error("Function not implemented.");
 }
-

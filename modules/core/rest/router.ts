@@ -1,4 +1,4 @@
-import { RouteDefinition } from "../../interfaces/route-definition.interface";
+import { RouteDefinition } from "../models/interfaces/route-definition.interface";
 import { ExportData } from "./dataExport";
 import { parseForms } from "./parser";
 import { Request, Response } from "express";

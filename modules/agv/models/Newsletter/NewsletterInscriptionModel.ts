@@ -13,11 +13,11 @@ import {
   INewsletterInscriptionPageInput,
 } from "@wisegar-org/wgo-base-models";
 import { AGVInscriptionModel } from "../Inscription/InscriptionModel";
-import { getInlineStyle } from "../../../utils/email-style.utils";
-import { EmailService } from "../../../services/email.service";
-import { HistoryService } from "../../../services/historic.service";
-import { TemplateService } from "../../../services/template.service";
-import { TemplateHandlebarsService } from "../../../services/template-handlebars.service";
+import { EmailService } from "../../../core/services/email.service";
+import { HistoryService } from "../../../core/services/historic.service";
+import { TemplateService } from "../../../core/services/template.service";
+import { TemplateHandlebarsService } from "../../../core/services/template-handlebars.service";
+import { getInlineStyle } from "../../../core/utils/email-style.utils";
 
 export class AGVNewsletterInscriptionModel {
   private repository: Repository<AGVNewsletterInscriptionEntity>;

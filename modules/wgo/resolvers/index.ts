@@ -8,16 +8,16 @@ import { AGVEventResolver } from "../../agv/resolvers/Event/AGVEventResolver";
 import { AGVContentsResolver } from "../../agv/resolvers/Content/AGVContentsResolver";
 import { AGVNewsletterResolver } from "../../agv/resolvers/Newsletter/AGVNewsletterResolver";
 import { AGVInscriptionResolver } from "../../agv/resolvers/Inscription/AGVInscriptionResolver";
-import { AuthResolver } from "../../resolvers/authentication.resolver";
-import { EmailResolver } from "../../resolvers/email.resolver";
-import { CoreResolver } from "../../resolvers/core.resolver";
-import { HistoricResolver } from "../../resolvers/history.resolver";
-import { LanguageResolver } from "../../resolvers/language.resolver";
-import { SettingsResolver } from "../../resolvers/settings.resolver";
-import { MediaResolver } from "../../resolvers/media.resolver";
-import { StorageResolver } from "../../resolvers/storage.resolver";
-import { TemplateResolver } from "../../resolvers/template.resolver";
-import { TranslationsResolver } from "../../resolvers/translation.resolver";
+import { CoreResolver } from "../../core/resolvers/core.resolver";
+import { AuthResolver } from "../../core/resolvers/authentication.resolver";
+import { LanguageResolver } from "../../core/resolvers/language.resolver";
+import { TranslationsResolver } from "../../core/resolvers/translation.resolver";
+import { SettingsResolver } from "../../core/resolvers/settings.resolver";
+import { TemplateResolver } from "../../core/resolvers/template.resolver";
+import { HistoricResolver } from "../../core/resolvers/history.resolver";
+import { MediaResolver } from "../../core/resolvers/media.resolver";
+import { EmailResolver } from "../../core/resolvers/email.resolver";
+import { StorageResolver } from "../../core/resolvers/storage.resolver";
 
 export const getResolvers = () => {
   return [

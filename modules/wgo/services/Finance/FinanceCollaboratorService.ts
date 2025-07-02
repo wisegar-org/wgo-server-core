@@ -3,9 +3,9 @@ import CollaboratorEntity from "../../database/entities/Finance/CollaboratorEnti
 import { USER_ROLE } from "../../models/constants";
 import { IAuthRegisterParams, SUPERADMIN } from "@wisegar-org/wgo-base-models";
 import { IContextBase } from "@wisegar-org/wgo-base-models";
-import { RoleEntity } from "../../../database/entities/RoleEntity";
-import { UserRolesService } from "../../../services/users-roles.service";
-import { AuthenticationService } from "../../../services/authentication.service";
+import { RoleEntity } from "../../../core/database/entities/RoleEntity";
+import { UserRolesService } from "../../../core/services/users-roles.service";
+import { AuthenticationService } from "../../../core/services/authentication.service";
 
 export class FinanceCollaboratorService {
   private ctx: IContextBase;

@@ -12,9 +12,9 @@ import {
 } from "@wisegar-org/wgo-base-models";
 import { AGVNewsletterInscriptionModel } from "./NewsletterInscriptionModel";
 import { HandlebarsTemplateService } from "@wisegar-org/wgo-templating";
-import { EmailService } from "../../../services/email.service";
-import { getInlineStyle } from "../../../utils/email-style.utils";
-import { HistoryService } from "../../../services/historic.service";
+import { EmailService } from "../../../core/services/email.service";
+import { HistoryService } from "../../../core/services/historic.service";
+import { getInlineStyle } from "../../../core/utils/email-style.utils";
 
 export class AGVNewsletterMessageModel {
   private repository: Repository<AGVNewsletterMessageEntity>;

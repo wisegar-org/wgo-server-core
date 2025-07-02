@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { Controller } from "../../decorators/controller.decorator";
-import { Get } from "../../decorators/get.decorator";
+import { Controller } from "../../core/decorators/controller.decorator";
+import { Get } from "../../core/decorators/get.decorator";
 
 @Controller("/api")
 export class AppController {

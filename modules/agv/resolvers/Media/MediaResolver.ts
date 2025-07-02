@@ -5,8 +5,8 @@ import {
 } from "@wisegar-org/wgo-base-models";
 import { MediaInput, MediasInput } from "./MediaInput";
 import { Arg, Authorized, Ctx, Mutation, Resolver } from "type-graphql";
-import { MediaResolver } from "../../../resolvers/media.resolver";
-import { MediaResponse } from "../../../resolvers/media.responses";
+import { MediaResolver } from "../../../core/resolvers/media.resolver";
+import { MediaResponse } from "../../../core/resolvers/media.responses";
 
 @Resolver()
 export class PublicMediaResolver extends MediaResolver {

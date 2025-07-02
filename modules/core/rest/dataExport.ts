@@ -1,4 +1,4 @@
-import { RouteDefinition } from "../../interfaces/route-definition.interface";
+import { RouteDefinition } from "../models/interfaces/route-definition.interface";
 
 export class ExportData {
   static instance: ExportData;

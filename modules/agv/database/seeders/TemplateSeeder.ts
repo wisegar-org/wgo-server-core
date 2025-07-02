@@ -4,8 +4,8 @@ import {
   getAuthTemplateKey,
   AuthTemplateEnum,
 } from "@wisegar-org/wgo-base-models";
-import { LanguageService } from "../../../services/language.service";
-import { TemplateService } from "../../../services/template.service";
+import { LanguageService } from "../../../core/services/language.service";
+import { TemplateService } from "../../../core/services/template.service";
 
 export const agvTemplateSeeder = async (dataSource: DataSource) => {
   const languageModel = new LanguageService({ ...ctx, dataSource });

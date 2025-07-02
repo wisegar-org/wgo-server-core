@@ -6,8 +6,8 @@ import {
 } from "../../services/Finance/FinanceSettings";
 import { ctx } from "../../handlers/AppContextHandler";
 import { SETTINGS_POP3, SETTINGS_SMTP } from "@wisegar-org/wgo-base-models";
-import { settingsDataSeeder } from "../../../database/seeders/settings.seeder";
-import { getSmtpSettings } from "../../../utils/settings.utils";
+import { settingsDataSeeder } from "../../../core/database/seeders/settings.seeder";
+import { getSmtpSettings } from "../../../core/utils/settings.utils";
 
 export const settingsSeeder = async (dataSource: DataSource) => {
   //Save keys to database settings

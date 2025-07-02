@@ -8,8 +8,8 @@ import {
   AGVEventResponse,
 } from "./AGVEventResponses";
 import { Arg, Authorized, Ctx, Mutation, Query, Resolver } from "type-graphql";
-import { HistoryService } from "../../../services/historic.service";
-import { HistoricResponse } from "../../../resolvers/history.responses";
+import { HistoryService } from "../../../core/services/historic.service";
+import { HistoricResponse } from "../../../core/resolvers/history.responses";
 
 @Resolver()
 export class AGVEventResolver {

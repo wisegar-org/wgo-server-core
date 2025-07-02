@@ -1,8 +1,8 @@
 import {
   ExportableForm,
   SimpleValidationError,
-} from "../../decorators/export.decorator";
-import { RouteDefinition } from "../../interfaces/route-definition.interface";
+} from "../decorators/export.decorator";
+import { RouteDefinition } from "../models/interfaces/route-definition.interface";
 import { ExportData } from "./dataExport";
 import { Request, Response } from "express";
 

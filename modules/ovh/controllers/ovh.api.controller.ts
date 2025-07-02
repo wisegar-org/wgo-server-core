@@ -2,9 +2,9 @@ import { Request, Response } from "express";
 import {
   ApiController,
   Controller,
-} from "../../decorators/controller.decorator";
-import { Get } from "../../decorators/get.decorator";
-import { validateOvhAuthHeader } from "../../services/ovh-auth.service";
+} from "../../core/decorators/controller.decorator";
+import { Get } from "../../core/decorators/get.decorator";
+import { validateOvhAuthHeader } from "../../core/services/ovh-auth.service";
 import { OvhService } from "../services/ovh.service";
 
 @ApiController("ovh")

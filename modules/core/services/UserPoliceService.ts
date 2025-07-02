@@ -6,7 +6,7 @@ import {
   GetUserPoliceTokenKey,
   GetCypherKey,
 } from "wgo-settings";
-import { IUser } from "../../interfaces/user.interface";
+import { IUser } from "../models/interfaces/user.interface";
 import { EmailServer } from "wgo-mailer";
 import { CypherService } from "wgo-crypto";
 import { IsNullOrUndefined } from "wgo-extensions";

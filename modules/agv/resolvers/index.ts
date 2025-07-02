@@ -4,14 +4,14 @@ import { AGVContentsResolver } from "./Content/AGVContentsResolver";
 import { AGVNewsletterResolver } from "./Newsletter/AGVNewsletterResolver";
 import { AGVInscriptionResolver } from "./Inscription/AGVInscriptionResolver";
 import { AppResolver } from "./AppResolver";
-import { AuthResolver } from "../../resolvers/authentication.resolver";
-import { EmailResolver } from "../../resolvers/email.resolver";
-import { CoreResolver } from "../../resolvers/core.resolver";
 import { NonEmptyArray } from "type-graphql";
-import { HistoricResolver } from "../../resolvers/history.resolver";
-import { LanguageResolver } from "../../resolvers/language.resolver";
-import { SettingsResolver } from "../../resolvers/settings.resolver";
-import { TemplateResolver } from "../../resolvers/template.resolver";
+import { CoreResolver } from "../../core/resolvers/core.resolver";
+import { AuthResolver } from "../../core/resolvers/authentication.resolver";
+import { LanguageResolver } from "../../core/resolvers/language.resolver";
+import { SettingsResolver } from "../../core/resolvers/settings.resolver";
+import { TemplateResolver } from "../../core/resolvers/template.resolver";
+import { HistoricResolver } from "../../core/resolvers/history.resolver";
+import { EmailResolver } from "../../core/resolvers/email.resolver";
 
 export const getResolverList = () => {
   return [

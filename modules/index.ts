@@ -6,27 +6,27 @@ export * from "./agv";
 /**
  * Database
  */
-export * from "./database/data-source";
+export * from "./core/database/data-source";
 /**
  * Database
  */
-export * from "./decorators/controller.decorator";
-export * from "./decorators/delete.decorator";
-export * from "./decorators/export.decorator";
-export * from "./decorators/get.decorator";
-export * from "./decorators/permission.decorator";
-export * from "./decorators/post.decorator";
-export * from "./decorators/put.decorator";
+export * from "./core/decorators/controller.decorator";
+export * from "./core/decorators/delete.decorator";
+export * from "./core/decorators/export.decorator";
+export * from "./core/decorators/get.decorator";
+export * from "./core/decorators/permission.decorator";
+export * from "./core/decorators/post.decorator";
+export * from "./core/decorators/put.decorator";
 /**
  * Middleware
  */
-export * from "./middlewares/cors.middleware";
-export * from "./middlewares/file-upload.middleware";
-export * from "./middlewares/gql-server.middleware";
-export * from "./middlewares/gql-upload.middleware";
-export * from "./middlewares/jwt.middleware";
-export * from "./middlewares/public-directory.middleware";
-export * from "./middlewares/rest.middleware";
+export * from "./core/middlewares/cors.middleware";
+export * from "./core/middlewares/file-upload.middleware";
+export * from "./core/middlewares/gql-server.middleware";
+export * from "./core/middlewares/gql-upload.middleware";
+export * from "./core/middlewares/jwt.middleware";
+export * from "./core/middlewares/public-directory.middleware";
+export * from "./core/middlewares/rest.middleware";
 
 /**
  * Models
@@ -46,34 +46,37 @@ export * from "./core/models/translations/content";
 /**
  * Resolvers
  */
-export * from "./resolvers/authentication.resolver";
-export * from "./resolvers/email.resolver";
-export * from "./resolvers/history.resolver";
-export * from "./resolvers/language.resolver";
-export * from "./resolvers/settings.resolver";
-export * from "./resolvers/storage.resolver";
-export * from "./resolvers/template.resolver";
-export * from "./resolvers/translation.resolver";
+export * from "./core/resolvers/core.resolver";
+export * from "./core/resolvers/authentication.resolver";
+export * from "./core/resolvers/email.resolver";
+export * from "./core/resolvers/history.resolver";
+export * from "./core/resolvers/language.resolver";
+export * from "./core/resolvers/media.resolver";
+export * from "./core/resolvers/settings.resolver";
+export * from "./core/resolvers/storage.resolver";
+export * from "./core/resolvers/template.resolver";
+export * from "./core/resolvers/translation.resolver";
+export * from "./core/resolvers/translation.inputs";
 /**
  * Services
  */
 export * from "./core/services/CypherService";
 export * from "./core/services/UtilService";
-export * from "./services/authentication.service";
-export * from "./services/email.service";
-export * from "./services/historic.service";
-export * from "./services/language.service";
-export * from "./services/users-roles.service";
-export * from "./services/settings.service";
-export * from "./services/storage.service";
-export * from "./services/template-handlebars.service";
-export * from "./services/template-parse.service";
-export * from "./services/template.service";
-export * from "./services/translation.service";
+export * from "./core/services/authentication.service";
+export * from "./core/services/email.service";
+export * from "./core/services/historic.service";
+export * from "./core/services/language.service";
+export * from "./core/services/users-roles.service";
+export * from "./core/services/settings.service";
+export * from "./core/services/storage.service";
+export * from "./core/services/template-handlebars.service";
+export * from "./core/services/template-parse.service";
+export * from "./core/services/template.service";
+export * from "./core/services/translation.service";
 /**
  * Utils
  */
-export * from "./utils/settings.utils";
+// export * from "./utils/settings.utils";
 // Externals
 export * from "typeorm-extension";
 export { Express, Request, Response } from "express";

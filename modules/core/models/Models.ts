@@ -1,4 +1,4 @@
-import { LanguageEntity } from "../../database/entities/LanguageEntity";
+import { LanguageEntity } from "../database/entities/LanguageEntity";
 
 export interface Utente {
   id: number;

@@ -23,7 +23,7 @@ import { FinanceRepositoryService } from "./FinanceRepositoryService";
 import { SETTINGS_FINANCE_ORGANIZATION } from "./FinanceSettings";
 import { ctx } from "../../handlers/AppContextHandler";
 import { READ_ISSUES_INTERVAL } from "../../models/constants";
-import { SettingsService } from "../../../services/settings.service";
+import { SettingsService } from "../../../core/services/settings.service";
 
 export class FinanceUpdateIssuesService {
   async Update(ctx: IContextBase) {

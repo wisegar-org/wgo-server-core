@@ -12,7 +12,7 @@ import {
 } from "../../resolvers/Inscription/AGVInscriptionResponses";
 import { IContextBase } from "@wisegar-org/wgo-base-models";
 import { AGVEventModel } from "../Event/EventModel";
-import { HistoryService } from "../../../services/historic.service";
+import { HistoryService } from "../../../core/services/historic.service";
 
 export class AGVInscriptionModel {
   private inscriptionRepository: Repository<AGVInscriptionEntity>;

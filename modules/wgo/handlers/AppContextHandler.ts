@@ -13,11 +13,11 @@ import {
   SUPERADMIN,
 } from "@wisegar-org/wgo-base-models";
 import { GetWebRootKey } from "../middlewares/HostAdminMiddleware";
-import { PostgresDataSource } from "../../database/data-source";
-import { UserRolesService } from "../../services/users-roles.service";
-import { IContextOptions } from "../../interfaces/context-options.interface";
-import { LanguageService } from "../../services/language.service";
-import { listenersEvents } from "../../utils/settings.utils";
+import { PostgresDataSource } from "../../core/database/data-source";
+import { UserRolesService } from "../../core/services/users-roles.service";
+import { IContextOptions } from "../../core/models/interfaces/context-options.interface";
+import { LanguageService } from "../../core/services/language.service";
+import { listenersEvents } from "../../core/utils/settings.utils";
 
 export const ctx = <IContextBase>{
   dataSource: PostgresDataSource,

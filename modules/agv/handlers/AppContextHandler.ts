@@ -6,7 +6,7 @@ import {
   GetPrivateKey,
   GetPublicKey,
 } from "wgo-settings";
-import { PostgresDataSource } from "../../database/data-source";
+import { PostgresDataSource } from "../../core/database/data-source";
 import { GetWebRootKey } from "../middlewares/HostClientMiddleware";
 import { EventEmitter } from "events";
 
@@ -15,10 +15,10 @@ import {
   translations,
   SUPERADMIN,
 } from "@wisegar-org/wgo-base-models";
-import { UserRolesService } from "../../services/users-roles.service";
-import { IContextOptions } from "../../interfaces/context-options.interface";
-import { LanguageService } from "../../services/language.service";
-import { listenersEvents } from "../../utils/settings.utils";
+import { UserRolesService } from "../../core/services/users-roles.service";
+import { IContextOptions } from "../../core/models/interfaces/context-options.interface";
+import { LanguageService } from "../../core/services/language.service";
+import { listenersEvents } from "../../core/utils/settings.utils";
 
 export const ctx = <IContextBase>{
   dataSource: PostgresDataSource,

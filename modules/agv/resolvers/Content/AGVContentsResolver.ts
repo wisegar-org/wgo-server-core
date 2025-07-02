@@ -3,8 +3,8 @@ import { SUPERADMIN, IContextBase } from "@wisegar-org/wgo-base-models";
 import { AGVContentsInput } from "./AGVContentsInputs";
 import { AGVContentsResponse } from "./AGVContentsResponses";
 import { Arg, Authorized, Ctx, Mutation, Query, Resolver } from "type-graphql";
-import { HistoryService } from "../../../services/historic.service";
-import { HistoricResponse } from "../../../resolvers/history.responses";
+import { HistoryService } from "../../../core/services/historic.service";
+import { HistoricResponse } from "../../../core/resolvers/history.responses";
 
 @Resolver()
 export class AGVContentsResolver {
