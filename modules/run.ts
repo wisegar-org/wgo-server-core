@@ -31,6 +31,7 @@ import { OvhController } from "./ovh/controllers/ovh.api.controller";
 import { IndexOvhController } from "./ovh/controllers/index.controller";
 import { boot } from "./core/handlers/boot.handler";
 import { WebsiteIndexController } from "./website/controllers/website-index.controller";
+import { PdfIndexController } from "./pdf/controllers/pdf-index.controller";
 
 const port = GetPortKey();
 
@@ -43,6 +44,7 @@ const serverOptions: IServerOptions = {
     OvhController,
     IndexOvhController,
     WebsiteIndexController,
+    PdfIndexController,
   ],
   port: parseInt(port),
   maxFileSize: 5000000000,
