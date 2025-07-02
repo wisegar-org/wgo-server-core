@@ -1,10 +1,10 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToMany } from "typeorm";
 import "reflect-metadata";
 import { UserEntity } from "./UserEntity";
-import { WGBaseEntity } from "./WGBaseEntity";
+import { CoreEntity } from "./core.entity";
 
 @Entity({ name: "roles" })
-export class RoleEntity extends WGBaseEntity {
+export class RoleEntity extends CoreEntity {
   @Column({ unique: true })
   name!: string;
 

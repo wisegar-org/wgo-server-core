@@ -6,10 +6,10 @@ import {
   CreateDateColumn,
 } from "typeorm";
 import AGVEventEntity from "./AGVEventEntity";
-import { WGBaseEntity } from "../../../core/database/entities/WGBaseEntity";
+import { CoreEntity } from "../../../core/database/entities/core.entity";
 
 @Entity()
-export class AGVInscriptionEntity extends WGBaseEntity {
+export class AGVInscriptionEntity extends CoreEntity {
   @PrimaryGeneratedColumn()
   id!: number;
 

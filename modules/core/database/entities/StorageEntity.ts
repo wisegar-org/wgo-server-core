@@ -1,12 +1,12 @@
 import { JoinTable, ManyToMany, ManyToOne, Entity, Column } from "typeorm";
-import { WGBaseEntity } from "./WGBaseEntity";
+import { CoreEntity } from "./core.entity";
 import MediaEntity from "./MediaEntity";
 
 /**
  * To be used as generic data storage
  */
 @Entity({ name: "storages" })
-export class StorageEntity extends WGBaseEntity {
+export class StorageEntity extends CoreEntity {
   @Column({ default: "" })
   type!: string;
 

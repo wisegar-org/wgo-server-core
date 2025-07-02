@@ -1,9 +1,9 @@
 import { Entity, Column } from "typeorm";
 
-import { WGBaseEntity } from "./WGBaseEntity";
+import { CoreEntity } from "./core.entity";
 
 @Entity({ name: "medias" })
-export class MediaEntity extends WGBaseEntity {
+export class MediaEntity extends CoreEntity {
   @Column({ default: "" })
   displayName!: string;
   @Column({ default: "" })

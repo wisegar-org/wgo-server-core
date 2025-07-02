@@ -1,9 +1,9 @@
 import { Entity, Column } from "typeorm";
 import { ISessionLicenze } from "../../models/Models";
-import { WGBaseEntity } from "./WGBaseEntity";
+import { CoreEntity } from "./core.entity";
 
 @Entity({ name: "sessions" })
-export class SessionEntity extends WGBaseEntity {
+export class SessionEntity extends CoreEntity {
   @Column()
   userId!: string;
   @Column()

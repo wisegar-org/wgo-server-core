@@ -1,9 +1,9 @@
 import { PrimaryGeneratedColumn, Entity, Column } from "typeorm";
 import { AGVNewsletterMessageStatusEnum } from "@wisegar-org/wgo-base-models";
-import { WGBaseEntity } from "../../../core/database/entities/WGBaseEntity";
+import { CoreEntity } from "../../../core/database/entities/core.entity";
 
 @Entity()
-export class AGVNewsletterMessageEntity extends WGBaseEntity {
+export class AGVNewsletterMessageEntity extends CoreEntity {
   @PrimaryGeneratedColumn()
   id!: number;
   @Column({ default: "" })

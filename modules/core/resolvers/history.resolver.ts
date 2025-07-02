@@ -10,7 +10,7 @@ import {
   HistoricPageResponse,
 } from "./history.responses";
 import { HistoryService } from "../services/historic.service";
-import { HistoryEntity } from "../database/entities/HistoryEntity";
+import { HistoryEntity } from "../database/entities/history.entity";
 
 @Resolver()
 export class HistoricResolver {

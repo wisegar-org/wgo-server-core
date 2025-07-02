@@ -8,9 +8,9 @@ import {
   Generated,
   Index,
 } from "typeorm";
-import { HistoryEntity } from "./HistoryEntity";
+import { HistoryEntity } from "./history.entity";
 
-export class WGBaseEntity extends BaseEntity {
+export class CoreEntity extends BaseEntity {
   @Index()
   @PrimaryGeneratedColumn()
   id!: number;

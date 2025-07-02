@@ -8,11 +8,11 @@ import {
   Actions,
   IContextBase,
 } from "@wisegar-org/wgo-base-models";
-import { HistoryEntity } from "../database/entities/HistoryEntity";
-import { WGBaseEntity } from "../database/entities/WGBaseEntity";
+import { HistoryEntity } from "../database/entities/history.entity";
+import { CoreEntity } from "../database/entities/core.entity";
 import { UserEntity } from "../database/entities/UserEntity";
 
-export class HistoryService<TEntity extends WGBaseEntity> {
+export class HistoryService<TEntity extends CoreEntity> {
   private dataSource: DataSource;
   private repository: Repository<HistoryEntity>;
   private readonly type: ObjectType<TEntity>;

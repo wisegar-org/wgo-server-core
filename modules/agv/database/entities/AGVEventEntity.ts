@@ -9,11 +9,11 @@ import {
 } from "typeorm";
 import { AGVInscriptionEntity } from "./AGVInscriptionEntity";
 import { EventStateEnum, EventTypeEnum } from "@wisegar-org/wgo-base-models";
-import { WGBaseEntity } from "../../../core/database/entities/WGBaseEntity";
+import { CoreEntity } from "../../../core/database/entities/core.entity";
 import MediaEntity from "../../../core/database/entities/MediaEntity";
 
 @Entity()
-export class AGVEventEntity extends WGBaseEntity {
+export class AGVEventEntity extends CoreEntity {
   @PrimaryGeneratedColumn()
   id!: number;
 

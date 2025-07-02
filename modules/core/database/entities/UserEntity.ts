@@ -8,13 +8,13 @@ import {
 } from "typeorm";
 import { RoleEntity } from "./RoleEntity";
 import "reflect-metadata";
-import { WGBaseEntity } from "./WGBaseEntity";
+import { CoreEntity } from "./core.entity";
 import { LanguageEntity } from "./LanguageEntity";
 import MediaEntity from "./MediaEntity";
 
 @Entity({ name: "users" })
 @Unique("userName-unique", ["userName", "code"])
-export class UserEntity extends WGBaseEntity {
+export class UserEntity extends CoreEntity {
   @Column({ nullable: false, default: "" })
   name?: string;
 

@@ -1,8 +1,8 @@
 import { PrimaryGeneratedColumn, Entity, Column } from "typeorm";
-import { WGBaseEntity } from "./WGBaseEntity";
+import { CoreEntity } from "./core.entity";
 
 @Entity({ name: "templates" })
-export class TemplateEntity extends WGBaseEntity {
+export class TemplateEntity extends CoreEntity {
   @Column()
   title!: string;
   @Column({ type: "text" })

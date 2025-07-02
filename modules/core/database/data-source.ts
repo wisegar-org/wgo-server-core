@@ -13,7 +13,7 @@ import StorageEntity from "./entities/StorageEntity";
 import { SchemaUpdate1738946546572 } from "./migrations/1738946546572-schema-update";
 import { LanguageEntity } from "./entities/LanguageEntity";
 import { TranslationEntity } from "./entities/TranslationEntity";
-import { HistoryEntity } from "./entities/HistoryEntity";
+import { HistoryEntity } from "./entities/history.entity";
 import MediaEntity from "./entities/MediaEntity";
 import { UserEntity } from "./entities/UserEntity";
 
