@@ -7,7 +7,7 @@ import {
   GetPublicKey,
 } from "wgo-settings";
 import { PostgresDataSource } from "../../core/database/data-source";
-import { GetWebRootKey } from "../middlewares/HostClientMiddleware";
+import { GetWebRootKey } from "../../core/middlewares/client-statics.middleware";
 import { EventEmitter } from "events";
 
 import {

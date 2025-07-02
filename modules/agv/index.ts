@@ -2,7 +2,7 @@ export * from "./handlers/AuthenticationHandler";
 export * from "./handlers/AppContextHandler";
 export * from "./handlers/ErrorHandler";
 
-export * from "./middlewares/HostClientMiddleware";
+export * from "../core/middlewares/client-statics.middleware";
 export * from "./database/seeders/SettingsSeeder";
 export * from "./database/seeders/TemplateSeeder";
 export * from "./database/seeders/AdminUserSeeder";
@@ -10,7 +10,7 @@ export * from "./database/seeders/AdminUserSeeder";
 /**
  * Export Middlewares
  */
-export * from "./middlewares/HandlebarsRenderMiddleware";
+export * from "../core/middlewares/handlebars-render.middleware";
 
 /**
  * Export Resolvers

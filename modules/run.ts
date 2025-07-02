@@ -10,12 +10,12 @@ import { AppContextHandler, ctx } from "./wgo/handlers/AppContextHandler";
 import { errorHandler } from "./wgo/handlers/ErrorHandler";
 import { createDatabase, dropDatabase } from "typeorm-extension";
 import { getResolvers } from "./wgo/resolvers";
-import { UseHandlebarsRenderMiddleware } from "./agv/middlewares/HandlebarsRenderMiddleware";
+import { UseHandlebarsRenderMiddleware } from "./core/middlewares/handlebars-render.middleware";
 import {
   UseAssetsHBHostMiddleware,
   UseClientSPAHostMiddleware,
   UsePublicMediaHostMiddleware,
-} from "./agv/middlewares/HostClientMiddleware";
+} from "./core/middlewares/client-statics.middleware";
 import {
   dataSourceOptions,
   PostgresDataSource,
@@ -30,6 +30,7 @@ import { UseSwaggerMiddleware } from "./core/middlewares/swagger.middleware";
 import { OvhController } from "./ovh/controllers/ovh.api.controller";
 import { IndexOvhController } from "./ovh/controllers/index.controller";
 import { boot } from "./core/handlers/boot.handler";
+import { WebsiteIndexController } from "./website/controllers/website-index.controller";
 
 const port = GetPortKey();
 
@@ -37,7 +38,12 @@ const serverOptions: IServerOptions = {
   authenticator: AuthenticationHandler,
   context: AppContextHandler,
   formatError: errorHandler,
-  controllers: [AppController, OvhController, IndexOvhController],
+  controllers: [
+    AppController,
+    OvhController,
+    IndexOvhController,
+    WebsiteIndexController,
+  ],
   port: parseInt(port),
   maxFileSize: 5000000000,
   maxFiles: 10,
