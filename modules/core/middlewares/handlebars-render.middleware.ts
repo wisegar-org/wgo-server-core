@@ -19,6 +19,7 @@ export const UseHandlebarsRenderMiddleware = (app: any) => {
     join(GetWebRootKey(), "handlebars", "views"),
     join(GetWebRootKey(), "modules", "website", "views"),
     join(GetWebRootKey(), "modules", "ovh", "views"),
+    join(GetWebRootKey(), "modules", "pdf", "views"),
   ]);
   // Set the 'handlebars' folder to static to serve files like images, CSS, etc..
   app.use(express.static(join(GetWebRootKey(), "handlebars")));
